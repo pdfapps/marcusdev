@@ -11,7 +11,7 @@ Full-stack developer building developer tools and mobile apps.
 
 ## Shipped Projects
 **Quick PDF Editor** - Mobile PDF editing and merging app on Google Play
-- [View on Google Play](https://play.google.com/store/apps/details?id=com.quickpdfeditormergepdf.pdfeditor)
+- [View on Google Play](https://play.google.com/store/apps/details?id=com.pdfapps.quickpdfeditor&hl)
 
 ## Tech Stack
 - Backend: Django, Python
