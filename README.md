@@ -4,7 +4,7 @@ Full-stack developer building developer tools and mobile apps.
 
 ## Current Project
 **MockMyData.io** - SaaS platform that generates realistic mock REST APIs for frontend testing
-- Live with paying customers
+- Live in production and ready to accept paying customers
 - Built with Django, React, PostgreSQL, Redis
 - Stripe integration for subscriptions
 - [Visit MockMyData.io](https://mockmydata.io)
