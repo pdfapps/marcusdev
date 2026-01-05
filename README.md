@@ -20,5 +20,5 @@ Full-stack developer building developer tools and mobile apps.
 - Cloud: Render, PostgreSQL, Redis
 
 ## Connect
-- 🐦 Twitter: [@mockdatas]
+- 🐦 Twitter: @mockdatas
 - 🌐 MockMyData.io: https://mockmydata.io
