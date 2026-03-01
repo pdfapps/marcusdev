@@ -18,7 +18,7 @@ Full-stack developer building developer tools and mobile apps.
 🛠️ **Tech Deep Dive:**
 - **Backend:** Django REST Framework with PostgreSQL for data persistence
 - **Caching:** Redis for API response caching and quota management
-- **Frontend:** React SPA with real-time project management
+- **Frontend:** React + TypeScript dashboard with built-in API testing and backend code export
 - **Infrastructure:** Deployed on Render with subdomain routing
 - **Payments:** Stripe webhooks for subscription lifecycle management
 - **Security:** AI-powered subdomain validation to prevent brand impersonation
