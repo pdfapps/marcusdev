@@ -1,68 +1,54 @@
 # 👋 Hi, I'm Marcus
 
-Full-stack developer building developer tools and mobile apps.
+Full-stack engineer building developer tools and mobile apps. Founder of **[MockMyData.io](https://mockmydata.io)** — the `mockmydata` org is mine.
 
----
+## 🔗 See it running
+
+- 📱 **[Field service app template](https://github.com/mockmydata/field-service-app)** — sample mobile app for field techs, built with React Native + TypeScript on MockMyData.io. Clone it, `npm install`, `npx expo start` — runs immediately against a live demo workspace, no signup or config.
+- 🧪 **[MockMyData playground](https://app.mockmydata.io/playground)** — try the platform itself in the browser.
 
 ## 🚀 Current Project
 
 ### [MockMyData.io](https://mockmydata.io)
-**SaaS platform that generates realistic mock REST APIs for frontend testing**
 
-✨ **Features:**
-- Instant API generation with custom endpoints and realistic data
-- Project-based architecture with custom subdomains
-- Full Stripe integration for subscription management
-- Live in production and ready to accept paying customers
+SaaS platform that generates realistic mock REST APIs for frontend testing. Built and operated solo — live in production with paying-customer infrastructure.
 
-🛠️ **Tech Deep Dive:**
+**🛠️ Tech Deep Dive:**
 - **Backend:** Django REST Framework with PostgreSQL for data persistence
-- **Caching:** Redis for API response caching and quota management
+- **Request pipeline:** Four-guard middleware — subdomain tenant resolution → three-path API key auth → atomic Redis quota enforcement → Redis health circuit breaker. Tenant isolation is enforced once in middleware rather than per-query, so a forgotten `WHERE` clause can never leak one customer's data to another.
+- **Caching & quotas:** Redis for response caching and per-plan rate limiting, with quota state surfaced to clients via `X-Plan` / `X-Requests-*` headers
 - **Frontend:** React + TypeScript dashboard with built-in API testing and backend code export
-- **Infrastructure:** Deployed on Render with subdomain routing
+- **Infrastructure:** Deployed on Render with wildcard subdomain routing
 - **Payments:** Stripe webhooks for subscription lifecycle management
 - **Security:** AI-powered subdomain validation to prevent brand impersonation
-
----
 
 ## 📦 Shipped Projects
 
 ### [Quick PDF Editor](https://play.google.com/store/apps/details?id=com.pdfapps.quickpdfeditor&hl)
-**Mobile PDF editing and merging app on Google Play**
+Mobile PDF editing and merging app on Google Play — 📊 1,000+ downloads
 
-📊 **1,000+ downloads**
-
-✨ **Features:**
+**✨ Features:**
 - Merge PDFs & images into single documents
 - Scan documents with camera
 - Edit pages: rotate, crop, reorder, delete, and draw
 - Dark mode support
 
-🛠️ **Tech Deep Dive:**
+**🛠️ Tech Deep Dive:**
 - **Framework:** React Native with custom native modules
-- **Core Innovation:** Modified react-native-pdf library to support advanced editing features
-- **Performance:** Implemented rotation, cropping, deletion, and drawing capabilities without re-rendering or flickering
-- **Challenge Solved:** Built coordinate transformation system to handle PDF manipulation in real-time
-- **Native Integration:** Custom Android modules using Kotlin for PDF processing with PDFBox
-
----
+- **Core innovation:** Modified react-native-pdf library to support advanced editing features
+- **Performance:** Rotation, cropping, deletion, and drawing without re-rendering or flickering
+- **Challenge solved:** Coordinate transformation system for real-time PDF manipulation
+- **Native integration:** Custom Android modules in Kotlin using PDFBox
 
 ## 💻 Tech Stack
 
-**Backend:** Django • Python • Django REST Framework  
-**Frontend:** React • JavaScript  
-**Mobile:** React Native • Android • Kotlin  
-**Cloud & Data:** Render • PostgreSQL • Redis  
-**Payments:** Stripe  
-**Libraries:** PDFBox • Custom native modules
-
----
+- **Backend:** Python • Django • Django REST Framework
+- **Frontend:** React • TypeScript • JavaScript
+- **Mobile:** React Native • Expo • Android • Kotlin
+- **Cloud & Data:** Render • PostgreSQL • Redis
+- **Payments:** Stripe
 
 ## 🔗 Connect
 
-- 🐦 **Twitter:** [@mockdatas](https://twitter.com/mockdatas)
-- 🌐 **Website:** [MockMyData.io](https://mockmydata.io)
-
----
-
-💡 *Currently learning customer acquisition and scaling MockMyData.io through digital marketing*
+- 🐦 Twitter: [@mockdatas](https://twitter.com/mockdatas)
+- 🌐 Website: [MockMyData.io](https://mockmydata.io)
