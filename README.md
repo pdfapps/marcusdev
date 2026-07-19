@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Marcus
 
-Full-stack engineer building developer tools and mobile apps. Founder of **[MockMyData.io](https://mockmydata.io)** — the `mockmydata` org is mine.
+Full-stack engineer building developer tools and mobile apps. Founder of **[MockMyData.io](https://mockmydata.io)** 
 
 ## 🔗 See it running
 
