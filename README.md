@@ -4,6 +4,8 @@ Full-stack engineer building developer tools and mobile apps. Founder of **[Mock
 
 ## 🔗 See it running
 
+- ⚙️ **[Middleware Patterns (Node version)](https://github.com/mockmydata/middleware-patterns)** — production-grade multi-tenant rate limiting. Docker + Postgres + Redis. Atomic quota metering, circuit breaker, graceful degradation. Run it: `docker-compose up --build`
+
 - 📱 **[Field service app template](https://github.com/mockmydata/field-service-app)** — sample mobile app for field techs, built with React Native + TypeScript on MockMyData.io. Clone it, `npm install`, `npx expo start` — runs immediately against a live demo workspace, no signup or config.
 - 🧪 **[MockMyData playground](https://app.mockmydata.io/playground)** — try the platform itself in the browser.
 
