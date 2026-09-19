@@ -17,7 +17,7 @@ SaaS platform that generates realistic mock REST APIs for frontend testing. Buil
 
 **🛠️ Tech Deep Dive:**
 - **Backend:** Django REST Framework with PostgreSQL for data persistence
-- **Request pipeline:** Four-guard middleware — subdomain tenant resolution → three-path API key auth → atomic Redis quota enforcement → Redis health circuit breaker. Tenant isolation is enforced once in middleware rather than per-query, so a forgotten `WHERE` clause can never leak one customer's data to another.
+- **Request pipeline:** Four-guard middleware — subdomain tenant resolution → three-path API key auth → atomic Redis quota enforcement → Redis health circuit breaker. Tenant isolation is enforced once in middleware rather than per-query
 - **Caching & quotas:** Redis for response caching and per-plan rate limiting, with quota state surfaced to clients via `X-Plan` / `X-Requests-*` headers
 - **Frontend:** React + TypeScript dashboard with built-in API testing and backend code export
 - **Payments:** Stripe webhooks for subscription lifecycle management
